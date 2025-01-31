@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { UserIcon, DocumentIcon } from "@heroicons/react/24/solid";
 
 const InterestRate = () => {
   const [pawningItem] = useState([
@@ -198,6 +199,225 @@ const InterestRate = () => {
           </form>
         </div>
       </div>
+
+      {/* add interest rate start */}
+
+      <div className="w-full p-4 bg-white border-l-8 rounded-lg shadow-xl border-l-gray-600">
+        <h2 className="p-4 font-bold ">Add Interest for Pawn Items</h2>
+
+        <div className="grid w-full grid-cols-2 gap-4">
+          <div className="w-full p-4 pr-8 border-r col-span1 left border-r-gray-50">
+            {/* get pawn-item details start */}
+
+            <form>
+              <div className="py-6 border-gray-200 ">
+              <label
+                htmlFor="pawn-item"
+                className="inline-block text-sm font-medium"
+              >
+                Pawn Item Details
+              </label>
+              <div className="mt-2 space-y-3">
+                <input
+                  id="pawn-item"
+                  type="text"
+                  className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                  placeholder="Customer ID"
+                />
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Item Name"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Pawn Item ID"
+                  />
+                </div>
+                <textarea
+                  readOnly
+                  disabled
+                  className="block w-full px-4 py-3 text-sm bg-gray-200 border-transparent rounded-lg focus:border-yellow-500 focus:ring-yellow-500 disabled:opacity-50 disabled:pointer-events-none"
+                  rows="4"
+                  placeholder="Note (damages)"
+                />
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-md shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Weight (grams)"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-md shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Month Count"
+                  />
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Actual Price (USD)"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Loan Price (USD)"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Need Payment"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="cartage"
+                  />
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Pawn Date"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Due Date"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="button"
+                className="flex items-center justify-center float-right w-1/4 px-4 py-3 mt-10 mb-4 text-sm font-bold text-center text-gray-600 border border-gray-600 rounded-lg gap-x-2 hover:bg-gray-800 focus:outline-none focus:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none hover:text-white"
+              >
+                <UserIcon className="w-5 h-5" />
+                Find
+              </button>
+            </div>
+            </form>
+
+            {/* get pawn-item details end */}
+          </div>
+
+          <div className="w-full p-6 pt-8 col-span1 right">
+            {/* Add interest start */}
+
+           
+              <form>
+              <label className="inline-block text-sm font-medium">Interest  Details</label>
+            <div className="flex flex-col w-full gap-4 p-3 sm:flex-row">
+                  <input
+                    readOnly
+                    disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Customer ID"
+                  />
+                  <input
+                    readOnly
+                    disabled
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Pawn Item ID"
+                  />
+                </div>
+
+                <div className="flex flex-col w-full gap-4 p-3 sm:flex-row">
+                  <input
+                  readOnly
+                  disabled
+                    type="text"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Full amount"
+                  />
+                  <input
+                    type="number"
+                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    placeholder="Pay amount"
+                  />
+                </div>
+
+                <div className="p-6 mt-20">
+
+                <div className="py-6 border-t border-gray-200">
+                  <label className="inline-block text-sm font-medium text-gray-700">
+                    Terms and Conditions
+                  </label>
+                  <div className="mt-3">
+                    <p className="text-sm text-gray-600">
+                      By providing details, you agree to our{" "}
+                      <a href="#" className="text-yellow-500 underline hover:text-yellow-700">
+                        Terms and Conditions
+                      </a>{" "}
+                      and acknowledge our{" "}
+                      <a href="#" className="text-yellow-500 underline hover:text-blue-700">
+                        Privacy Policy
+                      </a>
+                      .
+                    </p>
+                    <div className="flex items-start mt-4">
+                      <input
+                        id="terms"
+                        type="checkbox"
+                        className="w-4 h-4 text-yellow-400 border-gray-300 rounded focus:ring-yellow-400"
+                      />
+                      <label htmlFor="terms" className="ml-2 text-sm text-gray-700">
+                        I agree to the Terms and Conditions.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                  
+                <button
+              type="button"
+              className="flex items-center justify-center float-right w-1/4 px-4 py-3 mb-8 text-sm font-bold text-white border border-transparent rounded-lg bg-gradient-to-r from-gray-800 via-gray-600 to-gray-700 gap-x-2 hover:bg-yellow-500 focus:outline-none focus:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none drop-shadow-lg"
+            >
+              <DocumentIcon className="w-5 h-5" />
+              ADD Interest
+            </button>
+                </div>
+
+
+                
+              </form>
+              
+
+
+            {/* Add interest end */}
+          </div>
+        </div>
+      </div>
+
+      {/* add interest rate end */}
 
       <div className="grid min-h-[40vh] grid-cols-1 mt-8 bg-white rounded-lg drop-shadow-xl">
         <div className="grid w-full p-8 mt-4 rounded-lg shadow-xl bg-gray-50">

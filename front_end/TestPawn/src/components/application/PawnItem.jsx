@@ -357,12 +357,18 @@ const month_12 = 80000;
                     Pawn Item Details
                   </label>
                   <div className="mt-2 space-y-3">
-                    <input
-                      id="pawn-item"
-                      type="text"
-                      className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
-                      placeholder="Item Name"
-                    />
+                  <div className="flex flex-col gap-3 sm:flex-row">
+                      <input
+                        type="text"
+                        className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                        placeholder="Item Name"
+                      />
+                      <input
+                        type="number"
+                        className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                        placeholder="Cartage"
+                      />
+                    </div>
                     <input
                       type="text"
                       className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"

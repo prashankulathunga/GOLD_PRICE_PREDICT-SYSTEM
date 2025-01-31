@@ -43,10 +43,10 @@ const Dashboard = () => {
   return (
     <>
       {/* Dashboard Cards */}
-      <article class="w-full bg-gray-600 shadow p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300 flex gap-2">
-        <ShieldCheckIcon className="w-6 h-8 text-gray-400 drop-shadow-lg" />
+      <article class="w-full bg-gray-100 shadow p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300 flex gap-2 border-l-4 border-l-gray-600">
+        <ShieldCheckIcon className="w-6 h-8 text-gray-500 drop-shadow-lg" />
 
-        <p class="text-sm w-full text-gray-400 drop-shadow-lg">
+        <p class="text-sm w-full text-gray-500 drop-shadow-lg">
           Pawning Analytics provides data-driven insights to help you make
           informed decisions in the pawning industry, optimizing pricing,
           trends, and market strategies.
@@ -117,48 +117,7 @@ const Dashboard = () => {
       <div className="grid w-full grid-cols-1 gap-6 rounded-lg lg:grid-cols-3">
         {/* Active Customers Table */}
         <div className="p-4 bg-white shadow-lg rounded-lg h-auto sm:h-[50vh] col-span-1 lg:col-span-2 drop-shadow-lg">
-          <h2 className="p-4 text-lg font-medium text-gray-800">
-            Active Customers
-          </h2>
-          <div className="flex flex-col pt-2 overflow-x-auto">
-            <table className="min-w-full overflow-hidden border rounded-lg">
-              <thead className="text-gray-200 bg-gray-800">
-                <tr>
-                  {["Name", "T:Phone", "Address", "Action"].map((heading) => (
-                    <th
-                      key={heading}
-                      className="px-6 py-3 text-xs font-bold text-gray-200 uppercase text-start"
-                    >
-                      {heading}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((row) => (
-                  <tr
-                    key={row.id}
-                    className="hover:bg-yellow-50 odd:bg-gray-50"
-                  >
-                    <td className="px-6 py-4 text-sm text-gray-800">
-                      {row.name}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800">
-                      {row.phone}
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800">
-                      {row.address}
-                    </td>
-                    <td className="px-6 py-4 text-sm">
-                      <button className="flex items-center text-blue-500 hover:text-blue-700">
-                        Edit
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <Other />
         </div>
 
         {/* Daily Income-Outcome Chart */}
@@ -172,10 +131,47 @@ const Dashboard = () => {
         </div>
       </div>
 
-
-                <Other />
-
-      
+      <div className="bg-white w-full h-[50vh] mt-8 drop-shadow-xl shadow-xl rounded-lg p-4">
+        <h2 className="p-4 text-lg font-medium text-gray-800">
+          CashBook
+        </h2>
+        <div className="flex flex-col pt-2 overflow-x-auto">
+          <table className="min-w-full overflow-hidden border rounded-lg">
+            <thead className="text-gray-200 bg-gray-800">
+              <tr>
+                {["Name", "T:Phone", "Address", "Action"].map((heading) => (
+                  <th
+                    key={heading}
+                    className="px-6 py-3 text-xs font-bold text-gray-200 uppercase text-start"
+                  >
+                    {heading}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((row) => (
+                <tr key={row.id} className="hover:bg-yellow-50 odd:bg-gray-50">
+                  <td className="px-6 py-4 text-sm text-gray-800">
+                    {row.name}
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-800">
+                    {row.phone}
+                  </td>
+                  <td className="px-6 py-4 text-sm text-gray-800">
+                    {row.address}
+                  </td>
+                  <td className="px-6 py-4 text-sm">
+                    <button className="flex items-center text-blue-500 hover:text-blue-700">
+                      Edit
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </>
   );
 };
