@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'],
+        kanit:["Lexend Giga", "serif"]
       },
     },
   },

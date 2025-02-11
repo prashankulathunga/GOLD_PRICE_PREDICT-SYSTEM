@@ -20,7 +20,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-gray-900/90" id="features">
+    <div className="bg-gray-900" id="features">
       <div className="max-w-3xl mx-auto text-center pt-28">
         {/* Title Section */}
         <h2 className="text-3xl font-bold text-transparent sm:text-4xl bg-clip-text bg-gradient-to-r from-yellow-400 via-white/80 to-gray-50 drop-shadow-lg">

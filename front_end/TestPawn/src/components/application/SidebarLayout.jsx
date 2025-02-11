@@ -60,10 +60,10 @@ const SidebarLayout = ({ user }) => {
           {isCollapsed ? (
             <ArrowRightIcon className="w-5 h-5 text-gray-200" />
           ) : (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 shadow-xl drop-shadow-lg">
               <ArrowLeftIcon className="w-5 h-5 text-gray-200" />
-              <span className="text-xs font-medium text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-gray-500">
-                {/* Empowering Financial Decisions */}
+              <span className="text-xs font-medium text-gray-200">
+                Empowering Financial Decisions
               </span>
             </div>
           )}
@@ -94,7 +94,7 @@ const SidebarLayout = ({ user }) => {
                 {user?.name || "User"}{" "}
                 <CheckBadgeIcon className="w-4 h-4 text-blue-400" />
               </p>
-              <p className="text-xs text-gray-500">{user?.email || "N/A"}</p>
+              <p className="text-xs text-gray-500">{user?.email || "user@example.com"}</p>
             </>
           )}
         </div>

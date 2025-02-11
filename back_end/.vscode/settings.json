@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "user",
+            "database": "pawn_testdb",
+            "username": "prashan"
+        }
+    ],
+    "cSpell.words": [
+        "cornjobs",
+        "CURDATE"
+    ]
+}

@@ -74,7 +74,7 @@ const month_12 = 80000;
           <div className="grid h-80 col-span-2 transition-all duration-500 ease-in-out rounded-3xl bg-gradient-to-tr from-gray-800 via-gray-600 to-gray-700 drop-shadow-lg shadow-xl hover:shadow-xl hover:scale-[1.02]">
             <div className="flex flex-col items-center justify-center w-full h-full p-4 text-white">
               <h2 className="text-5xl font-[900] text-gray-200 drop-shadow-lg">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-400 to-gray-200 drop-shadow-lg">{timeTest ? timeTest: 0}</span> LKR
+                <span className="font-sans text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-400 to-gray-200 drop-shadow-lg">{timeTest ? timeTest: 0}</span> LKR
               </h2>
               <p className="p-4 text-sm text-center">
                 Effortlessly determine the value of pawned items with precision and confidence.
@@ -83,7 +83,7 @@ const month_12 = 80000;
           </div>
 
           {/* Form Section */}
-          <div className="relative grid col-span-4 transition-all duration-500 ease-in-out rounded-lg shadow-md bg-gray-50 drop-shadow-xl hover:shadow-xl hover:scale-100">
+          <div className="relative grid col-span-4 transition-all duration-500 ease-in-out border-r-8 rounded-lg shadow-md bg-gray-50 drop-shadow-xl hover:shadow-xl hover:scale-100 border-r-gray-600">
             <div className="flex items-center justify-between p-8">
               <div>
                 <h2 className="mb-2 font-sans text-3xl font-bold text-gray-700 drop-shadow-lg">
@@ -104,7 +104,7 @@ const month_12 = 80000;
                       Time Period (months)
                     </label>
                     <select
-                      id="timePeriod"
+                      id="timePeriod" 
                       value={timePeriod}
                       onChange={(e) => setTimePeriod(e.target.value)}
                       className="block w-full px-4 py-3 text-sm border-gray-100 rounded-lg focus:border-yellow-400 focus:ring-yellow-400 bg-gray-50"
@@ -211,8 +211,8 @@ const month_12 = 80000;
       </div>
 
       {/* Customer Form Section */}
-      <div className="grid gap-6 mt-4 lg:grid-cols-2 sm:grid-cols-1">
-        <div className="col-span-1 transition-all duration-500 ease-in-out rounded-lg bg-gray-50 hover:shadow-xl hover:scale-[1.02]">
+      <div className="grid gap-6 mt-4 rounded-lg lg:grid-cols-2 sm:grid-cols-1 ">
+        <div className="col-span-1 transition-all duration-500 ease-in-out rounded-lg bg-gray-50 hover:shadow-xl hover:scale-[1.02] ">
           <div className="max-w-3xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
             <div className="p-4 bg-gray-50 rounded-xl sm:p-7">
               <div className="mb-8 text-center">
@@ -289,7 +289,7 @@ const month_12 = 80000;
                 </div>
 
                 {/* Terms and Conditions Section */}
-                <div className="py-6 border-t border-gray-200">
+                <div className="py-6 border-t border-gray-200 ">
                   <label className="inline-block text-sm font-medium text-gray-700">
                     Terms and Conditions
                   </label>
@@ -339,7 +339,7 @@ const month_12 = 80000;
         </div>
 
         {/* Placeholder for Additional Content */}
-        <div className="col-span-1 transition-all duration-500 ease-in-out rounded-lg bg-gray-50 hover:shadow-xl hover:scale-[1.02]">
+        <div className="col-span-1 transition-all duration-500 ease-in-out rounded-lg bg-gray-50 hover:shadow-xl hover:scale-[1.02] ">
           <div className="max-w-3xl px-4 py-10 mx-auto sm:px-6 lg:px-8 lg:py-14">
             <div className="p-4 bg-gray-50 rounded-xl sm:p-7">
               <div className="mb-8 text-center">
@@ -363,11 +363,19 @@ const month_12 = 80000;
                         className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
                         placeholder="Item Name"
                       />
-                      <input
-                        type="number"
-                        className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
-                        placeholder="Cartage"
-                      />
+                      <select
+                      id="cartage"
+                      value={cartage}
+                      onChange={(e) => setCartage(e.target.value)}
+                      className="block w-full px-4 py-3 text-sm bg-gray-200 border-gray-100 rounded-lg focus:border-yellow-400 focus:ring-yellow-400"
+                    >
+                      <option value="" disabled>
+                        Select Cartage
+                      </option>
+                      <option value="24">24</option>
+                      <option value="22">22</option>
+                      <option value="18">18</option>
+                    </select>
                     </div>
                     <input
                       type="text"

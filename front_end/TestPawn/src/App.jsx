@@ -5,7 +5,6 @@ import Hero from "./components/Hero.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 import Features from "./components/Features.jsx";
-import Services from "./components/Services.jsx";
 import Blog from "./components/Blog.jsx";
 import Login from "./components/Login.jsx";
 import Signup from "./components/signup.jsx";

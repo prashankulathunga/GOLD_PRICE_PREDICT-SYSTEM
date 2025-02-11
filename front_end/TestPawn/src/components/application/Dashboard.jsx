@@ -43,10 +43,10 @@ const Dashboard = () => {
   return (
     <>
       {/* Dashboard Cards */}
-      <article class="w-full bg-gray-100 shadow p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300 flex gap-2 border-l-4 border-l-gray-600">
-        <ShieldCheckIcon className="w-6 h-8 text-gray-500 drop-shadow-lg" />
+      <article class="w-full  bg-gray-100 shadow p-2 space-y-2 rounded-md hover:-translate-y-2 duration-300 flex gap-2 border-l-4 border-l-gray-600">
+        <ShieldCheckIcon className="w-6 h-8 text-gray-700 drop-shadow-lg" />
 
-        <p class="text-sm w-full text-gray-500 drop-shadow-lg">
+        <p class="text-sm w-full text-gray-700 drop-shadow-lg">
           Pawning Analytics provides data-driven insights to help you make
           informed decisions in the pawning industry, optimizing pricing,
           trends, and market strategies.
@@ -131,7 +131,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="bg-white w-full h-[50vh] mt-8 drop-shadow-xl shadow-xl rounded-lg p-4">
+      <div className="bg-gray-50 w-full h-[50vh] mt-8 drop-shadow-xl shadow-xl rounded-lg p-4 ">
         <h2 className="p-4 text-lg font-medium text-gray-800">
           CashBook
         </h2>

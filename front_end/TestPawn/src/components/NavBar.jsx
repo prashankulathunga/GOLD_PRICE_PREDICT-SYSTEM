@@ -3,14 +3,14 @@ import { PhoneArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const NavBar = () => {
 
-const [banner, setBanner] = useState(true)
+const [banner, setBanner] = useState(false)
 
   
   return (
     <>
       {/* Notification Banner */}
       {banner && (
-        <div className="fixed top-0 z-50 w-full px-4 py-2 font-medium text-gray-500 bg-gray-800">
+        <div className="fixed top-0 z-50 w-full px-4 py-2 font-medium text-gray-500 bg-indigo-50">
         <div className="container flex items-center justify-between gap-4 mx-auto">
           <p className="text-sm ">
             Love Our System?&nbsp;🥰&nbsp;
@@ -20,7 +20,7 @@ const [banner, setBanner] = useState(true)
           </p>
           <button
             aria-label="Dismiss"
-            className="p-1 text-gray-300 transition rounded-lg shrink-0 bg-black/30 hover:bg-gray-700" onClick={()=>setBanner(false)}
+            className="p-1 text-gray-300 transition rounded-lg shrink-0 bg-white/30 hover:bg-gray-700" onClick={()=>setBanner(false)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

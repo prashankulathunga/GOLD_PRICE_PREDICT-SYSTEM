@@ -19,6 +19,7 @@ const InterestRate = () => {
     let formErrors = {};
 
     if (!price) formErrors.price = "Price is required.";
+    if (monthCount && week) formErrors.monthCount = "Only One Item.";
 
     setErrors(formErrors);
 
@@ -101,7 +102,7 @@ const InterestRate = () => {
                         .
                       </p>
                     </div>
-                    <div className="w-full text-5xl font-extrabold text-center text-transparent pt-14 bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-300 to-gray-200 drop-shadow-lg">
+                    <div className="w-full font-sans text-5xl font-extrabold text-center text-transparent pt-14 bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-300 to-gray-200 drop-shadow-lg">
                       {interest ? interest : 0} LKR{" "}
                     </div>
                   </div>
@@ -219,6 +220,8 @@ const InterestRate = () => {
               </label>
               <div className="mt-2 space-y-3">
                 <input
+                readOnly
+                disabled
                   id="pawn-item"
                   type="text"
                   className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
@@ -233,10 +236,8 @@ const InterestRate = () => {
                     placeholder="Item Name"
                   />
                   <input
-                    readOnly
-                    disabled
                     type="number"
-                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    className="block w-full px-3 py-2 text-sm border-yellow-100 rounded-lg shadow-sm bg-yellow-50 focus:border-yellow-400 focus:ring-yellow-400"
                     placeholder="Pawn Item ID"
                   />
                 </div>
@@ -360,7 +361,7 @@ const InterestRate = () => {
                   />
                   <input
                     type="number"
-                    className="block w-full px-3 py-2 text-sm bg-gray-200 border-gray-200 rounded-lg shadow-sm focus:border-yellow-400 focus:ring-yellow-400"
+                    className="block w-full px-3 py-2 text-sm border-gray-100 rounded-lg shadow-sm bg-yellow-50 focus:border-yellow-400 focus:ring-yellow-400"
                     placeholder="Pay amount"
                   />
                 </div>

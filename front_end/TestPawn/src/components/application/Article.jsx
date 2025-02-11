@@ -20,7 +20,7 @@ const Article = ({ amount, description }) => {
         </span>
   
         <div>
-          <p className="text-3xl font-[900] text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-gray-900 drop-shadow-lg">{amount} <span className="text-gray-400 ">USD</span></p>
+          <p className="text-3xl font-[900] text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-gray-900 drop-shadow-lg font-sans">{amount} <span className="text-gray-400 ">USD</span></p>
           <p className="text-sm font-extrabold text-transparent uppercase bg-clip-text bg-gradient-to-r from-yellow-400 via-white/40 to-indigo-500">{description}</p>
         </div>
       </article>

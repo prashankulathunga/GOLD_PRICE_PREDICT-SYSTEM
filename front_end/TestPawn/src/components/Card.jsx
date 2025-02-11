@@ -10,7 +10,7 @@ const Card = (props) => {
         <div className="flex items-center justify-center w-10 h-10 p-2 bg-gray-700 rounded-full">
           <CurrencyDollarIcon className="w-6 h-6 text-yellow-400" />
         </div>
-        <h3 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-400 to-gray-900 drop-shadow-lg">
+        <h3 className="font-sans text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-gray-400 to-gray-900 drop-shadow-lg">
           {title} <span className="text-gray-400">USD</span>
         </h3>
       </div>

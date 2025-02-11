@@ -11,7 +11,7 @@ const Other = () => {
             <h2 className="text-xl font-medium text-gray-900">
               Other Expenses Calculation
             </h2>
-            <blockquote class="relative border-s-4 ps-4 sm:ps-6 dark:border-neutral-700">
+            <blockquote className="relative border-s-4 ps-4 sm:ps-6 dark:border-neutral-700">
               <p className="p-4 mt-4 text-sm leading-relaxed">
                 This section is designed to track and calculate various
                 operational expenses incurred by the pawning shop. These
@@ -36,7 +36,7 @@ const Other = () => {
               <div className="w-full space-y-3 ">
                 <input
                   type="text"
-                  className="block w-full px-4 py-3 text-sm border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                  className="block w-full px-4 py-3 text-sm border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-yellow-400 disabled:opacity-50 disabled:pointer-events-none "
                   placeholder="Enter received cash"
                 />
               </div>
@@ -45,7 +45,7 @@ const Other = () => {
               <div className="w-full space-y-3">
                 <input
                   type="text"
-                  className="block w-full px-4 py-3 text-sm border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                  className="block w-full px-4 py-3 text-sm border border-gray-200 rounded-lg focus:border-yellow-400 focus:ring-yellow-400 disabled:opacity-50 disabled:pointer-events-none "
                   placeholder="Note"
                 />
               </div>
@@ -71,7 +71,7 @@ const Other = () => {
             <div className="flex items-center justify-center w-full mt-12">
                 
             <button className="flex items-center justify-center flex-1 w-full gap-2 px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-lg sm:w-auto hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-              Get Money <DocumentArrowDownIcon className="w-5 h-5 text-gray-500" />
+              Credit / Debit Money <DocumentArrowDownIcon className="w-5 h-5 text-gray-500" />
             </button>
                 
             </div>
